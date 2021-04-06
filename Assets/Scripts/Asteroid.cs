@@ -61,7 +61,6 @@ public class Asteroid : MonoBehaviour
       {
         player.SendMessage("ScorePoints", 25);
       }
-      
     }
   }
 }

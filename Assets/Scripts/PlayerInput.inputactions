@@ -87,17 +87,6 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "f649fc3c-96cd-43e3-9094-cefbc4e43646",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Shoot",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
                     "name": "1D Axis",
                     "id": "22439da8-2f5c-4215-b10b-f206afc48765",
                     "path": "1DAxis",

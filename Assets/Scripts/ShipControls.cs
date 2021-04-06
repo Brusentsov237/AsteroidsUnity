@@ -13,6 +13,7 @@ public class ShipControls : MonoBehaviour
   public float sreenY;
   public Text scoreText;
   public Text livesText;
+  public GameObject gameOverPanel;
 
   private PlayerInput _input;
   private Vector2 direction;
@@ -25,6 +26,7 @@ public class ShipControls : MonoBehaviour
   {
     _input = new PlayerInput();
     _input.PlayerShip.Shoot.performed += context => Shoot();
+    gameOverPanel.SetActive(false);
   }
   private void Start()
   {
@@ -69,7 +71,10 @@ public class ShipControls : MonoBehaviour
     {
       lives--;
       livesText.text = $"Lives: {lives}";
-      if(lives <= 0) { }
+      if (lives <= 0)
+      {
+        gameOverPanel.SetActive(true);
+      }
     }
   }
 
