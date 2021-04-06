@@ -4,16 +4,15 @@ using UnityEngine;
 
 public class Asteroid : MonoBehaviour
 {
-  public Rigidbody2D rb;
-  public GameObject mediumAsteroid;
-  public GameObject smallAsteroid;
-  public int asteroidSize;
-
-  public float maxAbsDirection;
-  public float maxAbsRotation;
-
-  public float sreenX;
-  public float sreenY;
+  [SerializeField] Rigidbody2D rb;
+  [SerializeField] AudioClip Explosion;
+  [SerializeField] GameObject mediumAsteroid;
+  [SerializeField] GameObject smallAsteroid;
+  [SerializeField] int asteroidSize;
+  [SerializeField] float maxAbsDirection;
+  [SerializeField] float maxAbsRotation;
+  [SerializeField] float sreenX;
+  [SerializeField] float sreenY;
 
   private Vector2 direction;
   private float rotation;
@@ -42,6 +41,7 @@ public class Asteroid : MonoBehaviour
   {
     if (collider.CompareTag("Bullet"))
     {
+      AudioSource.PlayClipAtPoint(Explosion, -transform.position, 12f);
       Destroy(collider.gameObject);
       Destroy(gameObject);
 

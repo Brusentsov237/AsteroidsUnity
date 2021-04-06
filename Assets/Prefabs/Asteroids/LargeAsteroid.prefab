@@ -136,6 +136,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 5258083977828411995}
+  Explosion: {fileID: 8300000, guid: 1fd31868d68903d4f9e2c4a3b7ef98f3, type: 3}
   mediumAsteroid: {fileID: 1944382939529663767, guid: 546f1985a38b5a74aabb35ad8e9787a7, type: 3}
   smallAsteroid: {fileID: 6190250463569606651, guid: 852902f2768da3742b016ddceea91ffa, type: 3}
   asteroidSize: 3
